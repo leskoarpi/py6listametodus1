@@ -31,4 +31,7 @@ else:
     paletta.append(bekertszin)
     for szin in paletta:
         print(szin +', ', end='')
-        
+    for szin in paletta:
+        if bekertszin == szin:
+            szamlalo +=1
+    print(f'A megadott szín {szamlalo}-szor szerepel a listában')
